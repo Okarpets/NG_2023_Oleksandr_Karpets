@@ -1,0 +1,2 @@
+print ("Oleksandr")
+print ("Karpets")
