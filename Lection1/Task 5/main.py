@@ -13,5 +13,3 @@ elif D == 0:
 elif D > 0:
     print ("There are two roots\n х1: {}".format (-(b-pow(D, 0.5))/(2*a)))
     print ("x2: {}".format (-(b+pow(D, 0.5))/(2*a)))
-
-    
