@@ -1,6 +1,6 @@
 
-print ("Please write a number 1")
-a = int(input ())
-print ("Please write a number 2")
-b = int(input ())
-print ("Oh, man, we with get a this, better number {} ! It is success.".format (b * a) )
+print ("Now we will multiply your number, take me your card details here, quickly, babypup.\n Write a first numb.")
+firstnumb = int(input ())
+print ("Second and faster.")
+secondnumb = int(input ())
+print ("Take your ugly numb = {}. I don't do it again.".format (firstnumb * secondnumb))
