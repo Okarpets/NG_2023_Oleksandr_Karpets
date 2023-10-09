@@ -1,4 +1,4 @@
-print ("Select number system:\n If you want get a Celsius, write - 1.\n If Fahrenheit already you must get 2.")
+print ("If you want get a Celsius, write - 1.\n If Fahrenheit already you must get 2.")
 syst = int(input())
 print ("Okay, write down the temperature.")
 temp = int(input())

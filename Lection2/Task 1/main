@@ -1,0 +1,13 @@
+
+from time import sleep
+import keyboard
+Userset = {0}
+print ("Your old list: {}".format (Userset))
+while len(Userset) != 0:
+   if keyboard.is_pressed('esc'):
+      exit()
+   Userset.update ([input()])
+   print ("Your new list: {}".format (Userset))
+   print("-"*50)
+   print("Do you want end this? If yes hold down esc")
+   sleep(1)
