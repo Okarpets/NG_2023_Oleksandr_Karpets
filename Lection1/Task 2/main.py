@@ -1,6 +1,6 @@
 
-print ("Now we will multiply your number, take me your card details here, quickly, babypup.\n Write a first numb.")
+print ("Now we will pluses your numbers, write me them, please.\n Write a first numb.")
 firstnumb = int(input ())
-print ("Second and faster.")
+print ("Second numb.")
 secondnumb = int(input ())
-print ("Take your ugly numb = {}. I don't do it again.".format (firstnumb * secondnumb))
+print ("It's a your sum. = {}. Take it :3".format (firstnumb + secondnumb))
