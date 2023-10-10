@@ -1,4 +1,3 @@
-
 print ("Now we will pluses your numbers, write me them, please.\n Write a first numb.")
 firstnumb = int(input ())
 print ("Second numb.")
