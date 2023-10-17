@@ -1,7 +1,10 @@
-lst = input()
-if str.endswith(lst, '-''.'',') == True:
-        print("It isn't a number")
-if str.isnumeric(lst) == True:
-    print("You wirte a number")
-else:
-      print("It's not a number")
+s1 = input('Write your list:\n').split(" ")
+i = 0
+while i < len(s1):  
+    elem = s1[i]
+    if str.isnumeric(elem):
+        print(elem + " - Number, index - {}".format (i))
+        i+=1
+    else:
+        print(elem + " - It isn't number, index - {}".format (i))
+        i+=1

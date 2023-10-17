@@ -1,4 +1,2 @@
-print("Complete your list.")
-lst={0}
-lst.update(input().split(" "))
-print(lst)
+sets = set(input('Complete your list:\n').split(" "))
+print(sets)
