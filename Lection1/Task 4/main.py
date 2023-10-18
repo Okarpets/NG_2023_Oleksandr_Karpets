@@ -1,23 +1,16 @@
 import math
-def pr(str):
- print("You must enter two numbers, if you will chose a root or power - only one number.")
-print ("Select your command\n/,*,+,-,root,power")
-match input():
+num1 = int(input('Please write the first number:\n'))
+num2 = int(input('Also the second number:\n'))
+match input('Select your command\n/,*,+,-,root,power\n'):
       case "/":
-            pr(str)
-            print(format(int(input())/int(input())))
+            print(num1/num2)
       case"*":
-            pr(str)
-            print(format(int(input())*int(input())))
+            print(num1*num2)
       case"+":
-            pr(str)
-            print("{}".format(int(input())+int(input())))
+            print(num1+num2)
       case "-":
-            pr(str)
-            print("{}".format(int(input())-int(input())))
+            print(num1-num2)
       case "power":
-            pr(str)
-            print(format(int(input())**2))
+            print(num1**2, num2**2)
       case "root":
-            pr(str)
-            print(format(math.sqrt(int(input())))) 
+            print(math.sqrt(num1),math.sqrt(num2))
