@@ -1,5 +1,4 @@
-import json
-stri = {
+{
     "glossary": {
         "title": "example glossary",
         "GlossDiv": {
@@ -24,5 +23,3 @@ stri = {
         }
     }
 }
-parsedstri = json.loads(stri)
-print(stri["glossary"])
