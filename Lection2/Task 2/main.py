@@ -1,7 +1,7 @@
-s1 = input('Write your list:\n').split(" ")
+User_string = input('Write your list:\n').split(" ")
 i = 0
-while i < len(s1):  
-    elem = s1[i]
+while i < len(User_string):  
+    elem = User_string[i]
     if str.isnumeric(elem):
         print(elem + " - Number, index - {}".format (i))
         i+=1
