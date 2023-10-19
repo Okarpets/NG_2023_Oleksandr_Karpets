@@ -14,3 +14,4 @@ match input('Select your command\n/,*,+,-,root,power\n'):
             print(num1**2, num2**2)
       case "root":
             print(math.sqrt(num1),math.sqrt(num2))
+            dead = input()
