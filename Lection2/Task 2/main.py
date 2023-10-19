@@ -8,4 +8,3 @@ while i < len(User_string):
     else:
         print(elem + " - It isn't number, index - {}".format (i))
         i+=1
-        dead = input()
