@@ -1,4 +1,5 @@
-lst = str(input())
-with open(lst, "r") as file:
-        #file.readline("test.txt")
-        print(file.readline(lst), end="")
+import locale
+file1 = open(input(), 'r')
+line = file1.readline()
+print(line)
+file1.close()
