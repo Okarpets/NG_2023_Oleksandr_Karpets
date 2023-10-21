@@ -1,5 +1,5 @@
 import json
-stri = {
+jsonstr = '''{
     "glossary": {
         "title": "example glossary",
         "GlossDiv": {
@@ -23,6 +23,10 @@ stri = {
             }
         }
     }
-}
-parsedstri = json.loads(stri)
-print(stri["glossary"])
+} '''
+json = json.loads(jsonstr)
+Titleone = json['glossary']
+Titletwostep = json['glossary']
+Titletwo = Titletwostep['GlossDiv']
+print("Title one: "'{}'.format(Titleone['title']))
+print("Title two: "'{}'.format(Titletwo['title']))
