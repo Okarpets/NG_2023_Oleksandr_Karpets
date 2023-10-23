@@ -1,25 +1,32 @@
-n = int(input('Write your interval:\n'))
-print("Just list of number:")
-check = 0
-for i in range(n):
-  check = check + 1
-  if n % check == 0:
-    print(check, check)
-  else:
-     print(check, "-")
-
+number = int(input('Write your number:\n'))
+lst=[]
+divisor=[]
+divod=0
+check=1
+while check< (number+1):
+    divod = divod+1
+    lst.insert(check, divod)
+    check=check+1
+check=0
+while check<len(lst):
+    for i in range(1, len(lst)+1):
+     if (lst[check]) % i == 0:
+        divisor.append(i)
+    print("{}" .format(check+1),divisor,)
+    divisor.clear()
+    check=check+1
 
 print("Prime numbers in your interval:")
-a = [check for check in range(n + 1)]
-a[1] = 0
+alphad = [check for check in range(number + 1)]
+alphad[1] = 0
 check = 2
-while check <= n:
-    if a[check] != 0:
-        j = check + check
-        while j <= n :
-            a[j] = 0
-            j = j + check
+while check <= number:
+    if alphad[check] != 0:
+        jet = check + check
+        while jet <= number :
+            alphad[jet] = 0
+            jet = jet + check
     check += 1
-a = set(a)
-a.remove(0)
-print(a)
+alphad = set(alphad)
+alphad.remove(0)
+print(alphad)
