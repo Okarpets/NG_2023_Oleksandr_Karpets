@@ -1,5 +1,3 @@
-import pip
-import json
 import psutil
 import socket
 from platform import uname

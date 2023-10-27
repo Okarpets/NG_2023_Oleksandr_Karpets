@@ -1,10 +1,9 @@
 User_string = input('Write your list:\n').split(" ")
 i = 0
 while i < len(User_string):  
-    elem = User_string[i]
-    if str.isnumeric(elem):
-        print(elem + " - Number, index - {}".format (i))
+    if str.isnumeric(User_string[i]):
+        print(User_string[i] + " - Number, index - {}".format (i))
         i+=1
     else:
-        print(elem + " - It isn't number, index - {}".format (i))
+        print(User_string[i] + " - It isn't number, index - {}".format (i))
         i+=1
