@@ -10,10 +10,10 @@ while check < (number+1):
     check+=1
 check=0
 while check<len(lst):
-    for i in range(1, len(lst)+1): 
-     if (lst[check]) % i == 0: #Looking for a number which are divided without remainder
-        divisor.append(i)
-    print("\n{}".format(check+1),divisor) 
+    for index in range(1, len(lst)+1): 
+     if (lst[check]) % index == 0: #Looking for a number which are divided without remainder
+        divisor.append(index)
+    print("{}".format(check+1),divisor) 
     if int(len(divisor)) == 2: #Looking for a prime numbers
        prime.append(check+1)
     divisor.clear() #Cleaning the cycle for reuse
