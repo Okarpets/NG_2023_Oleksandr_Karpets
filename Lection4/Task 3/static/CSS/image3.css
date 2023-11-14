@@ -1,0 +1,49 @@
+.poster {
+    display: block;
+    margin: 4em auto;
+    margin-right: auto;
+    border: 35px solid #140f07;
+    border-radius: 75px;
+}
+
+body {
+    background-color: #e8efed;
+}
+
+h1.red {
+    margin-top: -75px;
+    margin-inline-start:43%;
+    font-family:serif;
+    color: #000000;
+    font-size: 50px;
+    color: #e8efed;
+}
+
+p.red {
+    text-emphasis-position: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    width: 490px;
+    font-family:serif;
+    font-size: 18px;
+    margin-top: -45px;
+}
+input {
+    inset-inline-start: 435px;
+    inline-size: 230px;
+    background-color: #140f07;
+    block-size: auto;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 40em;
+    margin-bottom: 15px;
+    color: #e8efed;
+}
+
+.back {
+    width: 100%;
+    height: 5em;
+    margin: -12;
+    padding: 0;
+}

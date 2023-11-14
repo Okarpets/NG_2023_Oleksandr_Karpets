@@ -1,4 +1,4 @@
-print ("As you already know, the quadratic equation is given by the formula: ax^2+bx=c\n Specify the coefficients in the equation for calculations\n Specify the coefficient a:")
+print ("As you already know, the quadratic equation is given by the formula: ax^2+bx=c\nSpecify the coefficients in the equation for calculations\nSpecify the coefficient a:")
 a = int(input())
 print ("Specify coefficient b:")
 b = int(input())
