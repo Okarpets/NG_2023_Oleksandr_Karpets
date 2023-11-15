@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Online calculctor</title>
+    <h1>Online calculctor
+    </h1>
+    <h2>Please enter you value</h2>
+    <link rel="stylesheet" href="static/CSS/calc.css">
+    <img src="https://www.colorbook.io/imagecreator.php?hex=b38f55&width=1920&height=1080" alt="poster">
+</head>
+
+<body>
+
+    <input type="text" id="number1" placeholder="Enter value a">
+    <br>
+    <input type="text" id="number2" placeholder="Enter value b">
+    <br>
+    <button class="b1" onclick="sum()">Sum</button>
+    <button class="b2" onclick="minus()">Minus</button>
+    <button class="b2" onclick="divide()">Divide</button>
+    <button class="b2" onclick="mult()">Mult</button>
+    <button class="b2" onclick="root()">Root</button>
+    <button class="b2" onclick="power()">Power</button>
+    <h3>Result</h2>
+        <p id="result"></p>
+
+        <script>
+            function sum() {
+                var num1 = Number(document.getElementById("number1").value);
+                var num2 = Number(document.getElementById("number2").value);
+                document.getElementById("result").innerHTML = num1 + num2;
+            }
+            function minus() {
+                var num1 = Number(document.getElementById("number1").value);
+                var num2 = Number(document.getElementById("number2").value);
+                document.getElementById("result").innerHTML = num1 - num2;
+            }
+            function divide() {
+                var num1 = Number(document.getElementById("number1").value);
+                var num2 = Number(document.getElementById("number2").value);
+                document.getElementById("result").innerHTML = num1 / num2;
+            }
+            function mult() {
+                var num1 = Number(document.getElementById("number1").value);
+                var num2 = Number(document.getElementById("number2").value);
+                document.getElementById("result").innerHTML = num1 * num2;
+            }
+            function root() {
+                var num1 = Number(document.getElementById("number1").value);
+                var num2 = Number(document.getElementById("number2").value);
+                document.getElementById("result").innerHTML = num1 ** (1 / num2);
+            }
+            function power() {
+                var num1 = Number(document.getElementById("number1").value);
+                var num2 = Number(document.getElementById("number2").value);
+                document.getElementById("result").innerHTML = num1 ** num2;
+            }
+        </script>
+
+
+
+
+</body>
+
+</html>

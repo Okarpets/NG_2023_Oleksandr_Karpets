@@ -12,8 +12,8 @@ body {
 
 h1.red {
     margin-top: -75px;
-    margin-inline-start:43%;
-    font-family:serif;
+    margin-inline-start: 43%;
+    font-family: serif;
     color: #000000;
     font-size: 50px;
     color: #e8efed;
@@ -25,10 +25,11 @@ p.red {
     margin-right: auto;
     position: center;
     width: 490px;
-    font-family:serif;
+    font-family: serif;
     font-size: 18px;
     margin-top: -45px;
 }
+
 input {
     inset-inline-start: 435px;
     inline-size: 230px;

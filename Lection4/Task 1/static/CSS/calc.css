@@ -1,0 +1,50 @@
+.b1 {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    cursor: pointer;
+    margin-inline-start: 36%;
+}
+
+.b2 {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h2 {
+    margin-inline-start: 40.5%;
+}
+
+input {
+    margin-inline-start: 42.5%;
+}
+
+p {
+    margin-inline: 45%;
+}
+
+h3 {
+    margin-inline-start: 48%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.technistone.com/color-range/image-slab/Noble%20Supreme%20White_SLAB_web.jpg);
+}
+
+h1 {
+    margin-inline-start: 40%;
+}
+
+img {
+    margin-bottom: 40px;
+    height: 8%;
+    width: 100%;
+}
