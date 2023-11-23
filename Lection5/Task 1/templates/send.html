@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static\CSS\send.css">
+    <title>Send</title>
+</head>
+
+<body>
+    <h1 class="HOME">LET'S SEND MESSAGES</h1>
+    {% for msg in get_flashed_messages() %}
+    <div class="flash">{{msg}}</div>
+    {% endfor %}
+    <div class="conteiner">
+        <form action="send" method="POST">
+            <input type="text" name="namel" placeholder="Enter username">
+            <input type="password" name="passwordl" placeholder="Enter password">
+            <input type="text" name="messages" placeholder="Enter your messages">
+            <button class="send" type="submit">send</button>
+        </form>
+    </div>
+    <div>
+        <form action="/" method="GET">
+            <button class="exitbutton" type="submit">exit account</button>
+        </form>
+    </div>
+</body>
+
+</html>

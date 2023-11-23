@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static\CSS\all.css">
+    <title>All</title>
+</head>
+
+<body>
+    <h1 class="HOME">WATCH USER MESSAGES</h1>
+    {% for msg in get_flashed_messages() %}
+    <div class="flash">{{msg}}</div>
+    {% endfor %}
+    <div>
+        <h2 class="logged">You was logged as {{uname}}</h2>
+        {% for elem in allusermsg %}
+        <h3>{{elem}}</h3>
+        {% endfor %}
+    </div>
+    <form action="all" method="POST">
+        <button class="button1" type="submit">watch all messages</button>
+    </form>
+    <form action="send" method="GET">
+        <button class="button2" type="submit">write new messages</button>
+    </form>
+    <form action="/" method="GET">
+        <button class="button3" type="submit">exit account</button>
+    </form>
+</body>
+
+</html>
