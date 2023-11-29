@@ -44,7 +44,6 @@ def index():
             html += '</tr>'
         html += '</table>'
         
-        html = html.replace('<>', '')
         print(html)
         return render_template("index.html", user=user, html=str(html))
 
