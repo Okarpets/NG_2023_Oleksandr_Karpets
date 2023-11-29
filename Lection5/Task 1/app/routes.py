@@ -89,7 +89,7 @@ def all():
         return render_template('all.html',uname=uname)
     else:
         uname = session['userlogged']
-        sql = sqlalchemy.text("SELECT message FROM messages WHERE user='{}'".format(uname))
+        sql = sqlalchemy.text("SELECT user, message FROM messages")
         print(sql)
         allusermsg = db.session.execute(sql).all()
         if allusermsg == []:
@@ -99,6 +99,6 @@ def all():
             slicer = 0
             while slicer < len(allusermsg):
                     elem = str(allusermsg[slicer])
-                    allusermsg[slicer] = elem[2:-3]
+                    allusermsg[slicer] = elem[2:-2].replace("', '", " : ")
                     slicer += 1
         return render_template('all.html',  allusermsg=allusermsg, uname=uname)
