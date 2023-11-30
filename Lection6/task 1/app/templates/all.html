@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static\CSS\all.css">
+    <title>All</title>
+</head>
+
+<body>
+    <h1 class="HOME">OUR CHAT WITH {{other}}</h1>
+    <h2 class="logged">You was logged as {{uname}}</h2>
+    {% for msg in allchatuser %}
+    <h3>{{msg}}</h3>
+    {% endfor %}
+    {% for msg in get_flashed_messages() %}
+    <div class="flash">{{msg}}</div>
+    {% endfor %}
+    <form action="all" method="POST">
+        <input type="text" name="sender" placeholder="Enter your messages">
+        <button class="buttonsend" type="submit">send</button>
+    </form>
+    <form action="/" method="GET">
+        <button class="button3" type="submit">exit account</button>
+    </form>
+</body>
+
+</html>
