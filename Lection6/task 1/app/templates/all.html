@@ -10,9 +10,19 @@
 <body>
     <h1 class="HOME">OUR CHAT WITH {{other}}</h1>
     <h2 class="logged">You was logged as {{uname}}</h2>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            setInterval(function(){
+                $("#do").load("/all #do");
+            }, 3500);
+            });
+    </script>
+    <div id="do">
     {% for msg in allchatuser %}
     <h3>{{msg}}</h3>
     {% endfor %}
+    </div>
     {% for msg in get_flashed_messages() %}
     <div class="flash">{{msg}}</div>
     {% endfor %}
